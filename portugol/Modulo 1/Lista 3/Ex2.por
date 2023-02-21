@@ -1,29 +1,23 @@
 programa
 {
-	
 	funcao inicio()
 	{
-		/*
-		O programa deve verificar qual é a maior das 3 idades e então escrever na tela “a maior das três idades é: x”
-
-
-Exemplo de entrada:
-12
-9
-21
-
-Exemplo de saída:
- maior das três idades é: 21
-
-		*/
 		inteiro idade1, idade2, idade3
 
 		escreva("Digite a idade de tres pessoas:\n")
 		leia(idade1, idade2, idade3)
 		limpa()
 
-		se (){
+		se (idade1 > idade2 e idade1 > idade3){
 			escreva("A pessoa mais velha é " + idade1)
+		}
+
+		senao se(idade2 > idade1 e idade2 > idade3){
+			escreva("A pessoa mais velha é " + idade2)
+		}
+
+		senao se(idade3 > idade1 e idade3 > idade1){
+			escreva("A pessoa mais velha é " + idade3)
 		}
 	}
 }
@@ -32,7 +26,7 @@ Exemplo de saída:
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 426; 
+ * @POSICAO-CURSOR = 30; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
